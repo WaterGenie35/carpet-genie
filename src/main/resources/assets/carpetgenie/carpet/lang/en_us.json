@@ -1,0 +1,5 @@
+{
+    "carpetgenie.category.spawning": "spawning",
+    "carpetgenie.rule.spawnFromFloorHeightmap.desc": "Mob spawning algorithm samples the y coordinate from floor to surface + 1 instead of from world bottom to surface + 1",
+    "carpetgenie.rule.spawnHeightmapIgnoresBedrock.desc": "Mob spawning algorithm heightmap ignores bedrock (applies to both floor and surface heightmaps)"
+}
