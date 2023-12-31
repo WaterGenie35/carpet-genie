@@ -5,6 +5,6 @@
     "carpetgenie.rule.spawnHeightmapIgnoresBedrock.desc": "[WIP] Mob spawning algorithm heightmap ignores bedrock (applies to both floor and surface heightmaps)",
     "carpetgenie.rule.witchSwampHutMaxGroupSize.desc": "[WIP] Maximum group size for witch pack spawn in swamp hut (does not affect group size for normal overworld witch spawn)",
     "carpetgenie.rule.disableHostileMobGriefing.desc": "[WIP] Same as mobGriefing, but still allow passive/neutral mobs griefing (allays, foxes, piglins, sheep, snow golems, villagers)\nQuestion: use the inverted name so setting's false is vanilla, or don't invert so the name mirrors the mobGriefing rule?",
-    "carpetgenie.rule.enchantmentCostsDoNotCountTowardsLevelCap": "[WIP] Enchantment costs still exist but does not contribute to the maximum level when using an anvil",
-    "carpetgenie.rule.upgradingEnchantmentsDoesNotIncreaseAnvilUse": "[WIP] Anvil operations that only results in upgrading the enchantment levels on the target do not increase anvil use"
+    "carpetgenie.rule.enchantmentCostsDoNotCountTowardsLevelCap.desc": "[WIP] Enchantment costs still exist but does not contribute to the maximum level when using an anvil",
+    "carpetgenie.rule.upgradingEnchantmentsDoesNotIncreaseAnvilUse.desc": "[WIP] Anvil operations that only results in upgrading the enchantment levels on the target do not increase anvil use"
 }
