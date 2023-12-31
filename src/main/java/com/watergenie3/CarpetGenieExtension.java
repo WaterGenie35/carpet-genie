@@ -2,6 +2,9 @@ package com.watergenie3;
 
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.watergenie3.settings.CarpetGenieConfig;
 import com.watergenie3.settings.CarpetGenieSettings;
 
@@ -21,6 +24,8 @@ public class CarpetGenieExtension implements CarpetExtension, ModInitializer {
     public static final ModContainer MOD_CONTAINER = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow();
     public static final String MOD_VERSION = MOD_CONTAINER.getMetadata().getVersion().toString();
     public static final String MOD_NAME = MOD_CONTAINER.getMetadata().getName();
+
+    public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
 
     private static SettingsManager settingsManager;
 
