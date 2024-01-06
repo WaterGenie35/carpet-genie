@@ -7,5 +7,8 @@
     "carpetgenie.rule.disableHostileMobGriefing.desc": "[WIP] Same as mobGriefing, but still allow passive/neutral mobs griefing (allays, foxes, piglins, sheep, snow golems, villagers)\nQuestion: use the inverted name so setting's false is vanilla, or don't invert so the name mirrors the mobGriefing rule?",
     "carpetgenie.rule.enchantmentCostsDoNotCountTowardsLevelCap.desc": "[WIP] Enchantment costs still exist but does not contribute to the maximum level when using an anvil",
     "carpetgenie.rule.upgradingEnchantmentsDoesNotIncreaseAnvilUse.desc": "[WIP] Anvil operations that only results in upgrading the enchantment levels on the target do not increase anvil use",
+    "carpetgenie.rule.immovableNetherSignBanner.desc": "[WIP] Nether wood signs and banners can't be moved even with MTE",
+    "carpetgenie.rule.repeaterOnBlueIceHas1gtLessDelay.desc": "[WIP] Repeater on blue ice block has delay 1, 3, 5, 7 gt instead of 2, 4, 6, 8 gt respectively",
+    "carpetgenie.rule.repeaterOnMagentaGlazedTerracottaPowersExtraBlock": "[WIP] Repeater on magenta glazed terracotta also power 1 block into the direction of the arrow\nThis is just an idea to provide alternatives to QC",
     "carpetgenie.rule.highlightTargetFloor.desc": "[WIP] Highlight targeted block if it's the one the player is standing on"
 }
