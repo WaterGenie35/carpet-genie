@@ -13,6 +13,9 @@ public class CarpetGenieSettings {
     public static final String MTE = "mte";
     public static final String REDSTONE = "redstone";
     public static final String CLIENT = "client";
+    public static final String DEBUG = "debug";
+    public static final String FISHING = "fishing";
+    public static final String VILLAGER = "villager";
 
     @Rule(categories = {CARPETGENIE, FEATURE, SPAWNING})
     public static boolean spawnFromFloorHeightmap = false;
@@ -28,24 +31,33 @@ public class CarpetGenieSettings {
     public static int witchSwampHutMaxGroupSize = 1;
 
     @Rule(categories = {CARPETGENIE, FEATURE, SURVIVAL})
-    public static boolean disableHostileMobGriefing = false;
+    public static boolean hostileMobGriefing = true;
 
-    @Rule(categories = {CARPETGENIE, FEATURE, SURVIVAL, ANVIL})
-    public static boolean enchantmentCostsDoNotCountTowardsLevelCap = false;
+    @Rule(categories = {CARPETGENIE, FEATURE, ANVIL})
+    public static boolean enchantmentCostsCountTowardsLevelCap = true;
 
-    @Rule(categories = {CARPETGENIE, FEATURE, SURVIVAL, ANVIL})
-    public static boolean upgradingEnchantmentsDoesNotIncreaseAnvilUse = false;
+    @Rule(categories = {CARPETGENIE, FEATURE, ANVIL})
+    public static boolean upgradingEnchantmentsIncreaseAnvilUse = true;
 
     @Rule(categories = {CARPETGENIE, FEATURE, MTE})
-    public static boolean immovableNetherWoodSignBanner = false;
+    public static boolean immovableNetherWoodTileEntities = false;
 
     @Rule(categories = {CARPETGENIE, FEATURE, REDSTONE})
     public static boolean repeaterOnBlueIceHas1gtLessDelay = false;
 
     @Rule(categories = {CARPETGENIE, FEATURE, REDSTONE})
     public static boolean repeaterOnMagentaGlazedTerracottaPowersExtraBlock = false;
-
+    
     @Rule(categories = {CARPETGENIE, FEATURE, CLIENT})
     public static boolean highlightTargetFloor = false;
+    
+    @Rule(categories = {CARPETGENIE, DEBUG, FISHING})
+    public static boolean debugFishing = false;
+
+    @Rule(categories = {CARPETGENIE, DEBUG, VILLAGER})
+    public static boolean debugVillagerWorkstation = false;
+
+    @Rule(categories = {CARPETGENIE, DEBUG, VILLAGER})
+    public static boolean debugVillagerBed = false;
 
 }

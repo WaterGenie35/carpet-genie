@@ -16,6 +16,7 @@ Carpet Genie is just another [Carpet mod](https://github.com/gnembon/fabric-carp
 
 ## Features
 
+<!---
 ### Return of the Witch
 
 Provides options to make witch farm more viable to combat the nerf from decreased world bottom and overwhelmingly more productive raid farms.
@@ -28,6 +29,8 @@ Mob spawning algorithm randomly selects the y coordinate from the floor to surfa
 - Default value: `false`
 - Allowed values: `true`, `false`
 - Categories: `FEATURE`, `SPAWNING`
+
+I.e. selects between bottom-most block and top-most block instead of lowest y and top-most block.
 
 E.g. spawning platform at y -64 will have the same rate as a spawning platform at any y level in a void condition.
 
@@ -61,12 +64,12 @@ Does not affect the maximum group size for witches spawning in other environment
 
 Decouples the enchantment display order from the maximum level cap while still keeping an incentive to enchant optimally anvil-use-wise.
 
-#### [WIP] `enchantmentCostsDoNotCountTowardsLevelCap`
+#### [WIP] `enchantmentCostsCountTowardsLevelCap`
 
 Enchantment costs still exist but does not contribute to the maximum level cap when using an anvil.
 
 - Type: `Boolean`
-- Default value: `false`
+- Default value: `true`
 - Allowed values: `true`, `false`
 - Categories: `FEATURE`, `SURVIVAL`
 
@@ -83,6 +86,23 @@ Anvil operations that only results in upgrading the enchantment levels on the ta
 
 E.g. adding a 0 anvil use unbreaking 2 book (sacrifice) to a 1 anvil use mending and unbreaking 2 book (target) results in 1 anvil use (instead of 2) mending and unbreaking 3 book since it only upgrades.
 
+-->
+
+### Debugging
+
+#### `debugFishing`
+
+Shows whether the bobber has access to sky and rain, qualifies for treasure loot, and the remaining ticks until there's a fish.
+
+- Type: `Boolean`
+- Default value: `false`
+- Allowed values: `true`, `false`
+- Categories: `DEBUG`, `FISHING`
+
+![screenshot example of debugFishing](doc/debug/debug_fishing_example.png)
+
+This example demonstrates that both air and lily pads are fine, and that access to rain can be blocked when we still have access to sky.
+
 ## Style & Philosophy
 
 ### Carpet
@@ -93,6 +113,7 @@ facilitate understanding of various mechanics,
 address bugs/inefficiencies,
 and provide alternatives to missing/lacking issues.
 All while preserving the vanilla feel and making minimal/non-destructive changes.
+The world should still run with/without any of the carpet rules.
 
 This mod is thus made with this philosophy in mind,
 and anything that requires more drastic changes to the game will be separated into different mods instead.
